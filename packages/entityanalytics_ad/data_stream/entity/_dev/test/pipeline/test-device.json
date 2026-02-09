@@ -3,7 +3,7 @@
         {
             "@timestamp": "2025-10-09T21:34:29.084Z",
             "activedirectory": {
-                "device": {
+                "user": {
                     "account_expires": "9223372036854775807",
                     "account_never_expires": true,
                     "bad_password_time": "133251039041149826",
