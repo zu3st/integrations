@@ -27,6 +27,12 @@ processors:
       tag: pipeline_entity
       ignore_missing_pipeline: true
 
+  - rename:
+      field: activedirectory.user
+      target_field: activedirectory.device
+      ignore_missing: true
+      if: ctx.activedirectory?.device == null
+
   - script:
       lang: painless
       ignore_failure: false
